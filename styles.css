@@ -48,3 +48,106 @@
 .login-button:hover {
 	background-color: #2989B6;
 }
+
+.main-contact p {
+  font-size: var(--font-size-body);
+}
+
+/* automation form mobile */
+.aut-form-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.aut-form-container h1 {
+  font-size: var(--font-size-subtitle);
+  margin: 0 0 1.8rem 0;
+}
+
+.aut-form label {
+  display: flex;
+  align-items: center;
+  font-size: var(--font-size-body);
+  margin-bottom: 0.6rem;
+}
+
+.aut-form input {
+  margin: 0;
+}
+
+.aut-form-control {
+  display: block;
+  width: 100%;
+  height: 36px;
+  padding: 0.36rem 0.72rem;
+  background-color: var(--color-white);
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.aut-form-control:last-child {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+}
+
+.aut-form input#name {
+  background-image: url('./assets/imagery/user.svg');
+  background-size: 21px;
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  text-indent: 36px;
+  transition: 0.3s;
+}
+
+.aut-form input#email {
+  background-image: url('./assets/imagery/email.svg');
+  background-size: 21px;
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  text-indent: 36px;
+  transition: 0.3s;
+}
+
+.aut-form input#phone {
+  background-image: url('./assets/imagery/phone.svg');
+  background-size: 21px;
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  text-indent: 36px;
+  transition: 0.3s;
+}
+
+.aut-form input#address {
+  background-image: url('./assets/imagery/location.svg');
+  background-size: 21px;
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  text-indent: 36px;
+  transition: 0.3s;
+}
+
+.aut-form input#name:focus,
+.aut-form input#email:focus,
+.aut-form input#phone:focus,
+.aut-form input#address:focus {
+  background-image: none;
+  text-indent: 0px;
+  opacity: 0.6;
+}
+
+.aut-form input::placeholder {
+  color: #9d9393;
+}
+
+.aut-form input:focus::placeholder {
+  opacity: 0.6;
+}
+
+.aut-form .aut-text-area {
+  min-height: 111px;
+  width: 100%;
+  padding: 0.625rem;
+  resize: vertical;
+}

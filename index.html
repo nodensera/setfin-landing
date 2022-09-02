@@ -9,6 +9,7 @@
 </head>
 <body>
 
+    <!-- menu section -->
     <div class="menu">
 		<h3>SETFIN</h3>
 		<nav class="first">
@@ -23,7 +24,60 @@
 		<a><button class="login-button">Fazer login</button></a>
 	</div>
 
-    <h1>A Setfin existe para facilitar a vida dos empreendedores!</h1>
+    <!-- contact form section -->
+    <div class="contact-form-container">
+      <div class="aut-form-container">
+        <form class="aut-form">
+          <input
+            type="text"
+            id="name"
+            class="aut-form-control"
+            placeholder="Nome Completo:"
+            name="user_name"
+          />
+          <label for="name"></label>
+
+          <input
+            type="email"
+            id="email"
+            class="aut-form-control"
+            placeholder="Email:"
+            name="user_email"
+          />
+          <label for="email"></label>
+
+          <input
+            type="tel"
+            id="phone"
+            class="aut-form-control"
+            placeholder="Número de Telefone:"
+            name="user_phone"
+          />
+          <label for="phone"></label>
+
+          <input
+            type="text"
+            id="address"
+            class="aut-form-control"
+            placeholder="Endereço:"
+            name="user_address"
+          />
+          <label for="address"></label>
+
+          <textarea
+            name="user_text_area"
+            id="textarea"
+            class="aut-text-area"
+            placeholder="Escreva sua Mensagem:"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <label for=""></label>
+
+          <input type="submit" value="Envie Agora" class="aut-form-control" />
+        </form>
+      </div>
+    </div>
     
     <script src="script.js"></script>
 </body>

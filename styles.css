@@ -1,3 +1,50 @@
-h1 {
-    font-size: 4rem;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+
+* {
+    font-family: "Ubuntu", "Montserrat", sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 10%;
+}
+
+.menu h3 {
+    font-size: 1.5rem;
+    color: #1C5D7C;
+}
+
+.nav-links li {
+	display: inline-block;
+	padding: 0 6px; 
+}
+
+.nav-links li a {
+    font-size: .8rem;
+    color: #242424;
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+	color: #1C5D7C; 
+}
+
+.login-button {
+    color: #fff;
+	padding: 9px 25px;
+	background-color: #1C5D7C;
+	border: none;
+	border-radius: 9px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+
+.login-button:hover {
+	background-color: #2989B6;
 }

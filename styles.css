@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
-
 * {
     font-family: "Ubuntu", "Montserrat", sans-serif;
     font-size: 1rem;
@@ -35,8 +34,27 @@
 	color: #1C5D7C; 
 }
 
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+main .main-title h1 {
+  font-size: 50px;
+}
+
+main .main-title h3 {
+  font-size: 25px;
+}
+
+.contact-form-container {
+  padding: 21px;
+  border: 1px solid #9d9393;
+  border-radius: 9px;
+}
+
 .login-button {
-    color: #fff;
+  color: #fff;
 	padding: 9px 25px;
 	background-color: #1C5D7C;
 	border: none;
@@ -97,7 +115,7 @@
   background-size: 21px;
   background-repeat: no-repeat;
   background-position: 15px center;
-  text-indent: 36px;
+  text-indent: 15px;
   transition: 0.3s;
 }
 
@@ -106,7 +124,7 @@
   background-size: 21px;
   background-repeat: no-repeat;
   background-position: 15px center;
-  text-indent: 36px;
+  text-indent: 15px;
   transition: 0.3s;
 }
 
@@ -115,7 +133,7 @@
   background-size: 21px;
   background-repeat: no-repeat;
   background-position: 15px center;
-  text-indent: 36px;
+  text-indent: 15px;
   transition: 0.3s;
 }
 
@@ -124,7 +142,7 @@
   background-size: 21px;
   background-repeat: no-repeat;
   background-position: 15px center;
-  text-indent: 36px;
+  text-indent: 15px;
   transition: 0.3s;
 }
 

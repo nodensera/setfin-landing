@@ -163,10 +163,11 @@ main .main-title h3 {
 }
 
 .aut-form input#address {
-  background-image: url('./assets/imagery/location.svg');
-  background-size: 21px;
+  position: relative;
+  background-image: url('./assets/key.svg');
+  background-size: 13.1px;
   background-repeat: no-repeat;
-  background-position: 15px center;
+  background-position: right;
   text-indent: 15px;
   transition: 0.3s;
 }

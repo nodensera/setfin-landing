@@ -226,7 +226,7 @@ textarea:focus, input:focus{
 }
 
 .services-square img {
-  height: 66px;
+  height: 54px;
   justify-self: center;
   align-self: end;
 }
@@ -234,5 +234,37 @@ textarea:focus, input:focus{
 .services-square h3 {
   color: rgb(56, 56, 56);
   font-size: 18px;
+  text-align: center;
+}
+
+/* featured section */
+.featured h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.featured h3 {
+  font-size: 18px;
+  text-align: center;
+}
+
+.featured-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 81%;
+  margin: 0 auto;
+}
+
+.featured-square {
+  display: grid;
+}
+
+.featured-square img {
+  height: 54px;
+  margin: 0 auto;
+}
+
+.featured-square p {
   text-align: center;
 }

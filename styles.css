@@ -37,11 +37,11 @@
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 30px 15px 45px 15px;
+  padding: 30px 0 114px 0;
   background-image: url(/assets/blob-main.svg);
-  background-position: right;
+  background-position: top right;
   background-repeat: no-repeat;
-  background-size: 650px;
+  background-size: 600px;
 }
 
 main .main-title {
@@ -62,7 +62,7 @@ main .main-title h3 {
   padding: 21px;
   border-radius: 9px;
   background-color: #fff;
-  box-shadow: 0px 4px 14px hsla(0, 0%, 0%, 0.25);;
+  box-shadow: 0px 4px 14px hsla(0, 0%, 0%, 0.25);
 }
 
 .login-button {
@@ -198,4 +198,41 @@ main .main-title h3 {
 
 textarea:focus, input:focus{
     outline: none;
+}
+
+/* services section */
+.services h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.services-img-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 81%;
+  margin: 0 auto;
+}
+
+.services-square {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 180px;
+  border-radius: 6px;
+  box-shadow: 0px 2px 13px hsla(0, 0%, 0%, 0.25);
+  margin: 15px 0;
+}
+
+.services-square img {
+  height: 66px;
+  justify-self: center;
+  align-self: end;
+}
+
+.services-square h3 {
+  color: rgb(56, 56, 56);
+  font-size: 18px;
+  text-align: center;
 }

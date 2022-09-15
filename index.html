@@ -1,201 +1,377 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Setfin Landing</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- menu section -->
+    <nav class="menu">
+      <h3>SETFIN</h3>
+      <nav class="first">
+        <ul class="nav-links">
+          <li><a href="#">LINK1</a></li>
+          <li><a href="#">LINK2</a></li>
+          <li><a href="#">LINK3</a></li>
+          <li><a href="#">LINK4</a></li>
+          <li><a href="#">LINK5</a></li>
+        </ul>
+      </nav>
+      <a><button class="login-button">Fazer login</button></a>
+    </nav>
 
-  <!-- menu section -->
-  <nav class="menu">
-		<h3>SETFIN</h3>
-		<nav class="first">
-			<ul class="nav-links">
-				<li><a href="#">LINK1</a></li>
-				<li><a href="#">LINK2</a></li>
-				<li><a href="#">LINK3</a></li>
-        <li><a href="#">LINK4</a></li>
-        <li><a href="#">LINK5</a></li>
-			</ul>
-		</nav>
-		<a><button class="login-button">Fazer login</button></a>
-	</nav>
+    <!-- hero section -->
+    <main>
+      <div class="main-title">
+        <h1>A Setfin existe para facilitar a vida dos empreendedores!</h1>
+        <h3>
+          Você se preocupa com o crescimento do seu negócio e a Setfin cuida de
+          todas as formalizações, backoffices e burocracias.
+        </h3>
+      </div>
+      <!-- contact form section -->
+      <div class="contact-form-container">
+        <div class="aut-form-container">
+          <form class="aut-form">
+            <label for="name">Nome</label>
+            <input
+              type="text"
+              id="name"
+              class="aut-form-control"
+              placeholder="Nome do Empreendedor"
+              name="user_name"
+            />
 
-  <!-- hero section -->
-  <main>
-    <div class="main-title">
-      <h1>A Setfin existe para facilitar a vida dos empreendedores!</h1>
-      <h3>Você se preocupa com o crescimento do seu negócio e a Setfin cuida de todas as formalizações, backoffices e burocracias. </h3>
-    </div>
-    <!-- contact form section -->
-    <div class="contact-form-container">
-      <div class="aut-form-container">
-        <form class="aut-form">
-          <label for="name">Nome</label>
-          <input
-            type="text"
-            id="name"
-            class="aut-form-control"
-            placeholder="Nome do Empreendedor"
-            name="user_name"
+            <label for="email">Telefone</label>
+            <input
+              type="email"
+              id="email"
+              class="aut-form-control"
+              placeholder="(11) 93274-4219"
+              name="user_email"
+            />
+
+            <label for="phone">E-mail</label>
+            <input
+              type="tel"
+              id="phone"
+              class="aut-form-control"
+              placeholder="exemplo@setfin.com.br"
+              name="user_phone"
+            />
+
+            <label for="address">Defina uma senha</label>
+            <input
+              type="text"
+              id="address"
+              class="aut-form-control"
+              placeholder="********"
+              name="user_address"
+            />
+
+            <label for="address">Repita sua senha</label>
+            <input
+              type="text"
+              id="address"
+              class="aut-form-control"
+              placeholder="********"
+              name="user_address"
+            />
+
+            <p>
+              Ao continuar com seu cadastro você concorda com as políticas de
+              privacidade, termos e condições
+            </p>
+
+            <input type="submit" value="Continuar" class="aut-form-control" />
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <!-- services section -->
+    <section class="services">
+      <h1>Quais os principais recursos?</h1>
+
+      <div class="services-img-container">
+        <div class="services-square">
+          <img
+            src="/assets/financiamento-colaborativo.svg"
+            alt=""
+            class="services-icon"
           />
+          <h3>Faturamento</h3>
+        </div>
+        <div class="services-square">
+          <img
+            src="/assets/financiamento-colaborativo-1.svg"
+            alt=""
+            class="services-icon"
+          />
+          <h3>Pagamento</h3>
+        </div>
+        <div class="services-square">
+          <img src="/assets/dinheiro.svg" alt="" class="services-icon" />
+          <h3>Financeiro</h3>
+        </div>
+        <div class="services-square">
+          <img
+            src="/assets/avaliacao-do-cliente.svg"
+            alt=""
+            class="services-icon"
+          />
+          <h3>Clientes</h3>
+        </div>
+        <div class="services-square">
+          <img
+            src="/assets/gestao-da-cadeia-de-abastecimento.svg"
+            alt=""
+            class="services-icon"
+          />
+          <h3>Fornecedores</h3>
+        </div>
+        <div class="services-square">
+          <img
+            src="/assets/bate-papo-online.svg"
+            alt=""
+            class="services-icon"
+          />
+          <h3>Suporte</h3>
+        </div>
+        <div class="services-square">
+          <img src="/assets/contabilidade.svg" alt="" class="services-icon" />
+          <h3>Contabilidade</h3>
+        </div>
+        <div class="services-square">
+          <img src="/assets/impostos.svg" alt="" class="services-icon" />
+          <h3>Impostos</h3>
+        </div>
+        <div class="services-square">
+          <img src="/assets/general_ledger.svg" alt="" class="services-icon" />
+          <h3>Orçamento</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- featured section -->
+    <section class="featured">
+      <h1>Como funciona?</h1>
+      <h3>
+        Veja como é simples começar a utilizar a Setfin para crescer seus
+        negócios!
+      </h3>
+
+      <div class="featured-container">
+        <div class="featured-square">
+          <img src="/assets/image8.svg" alt="" class="services-icon" />
+          <h2>Cadastro</h2>
+          <p>
+            Em poucos cliques você realiza seu cadastro com login e senha para
+            ter acesso a plataforma!
+          </p>
+        </div>
+        <div class="featured-square">
+          <img src="/assets/image4.svg" alt="" class="services-icon" />
+          <h2>Acesso</h2>
+          <p>
+            Em poucos cliques você realiza seu cadastro com login e senha para
+            ter acesso a plataforma!
+          </p>
+        </div>
+        <div class="featured-square">
+          <img src="/assets/image7.svg" alt="" class="services-icon" />
+          <h2>Plataforma</h2>
+          <p>
+            Em poucos cliques você realiza seu cadastro com login e senha para
+            ter acesso a plataforma!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- pricing first section -->
+    <div class="platform">
+      <div class="platform-container">
+        <img src="./assets/laptop.svg" alt="" class="platform-img-container" />
+      </div>
+
+      <div class="platform-features">
+        <div class="features-item">
+          <img src="./assets/tick.svg" alt="" />
+          <p>Plataforma amgável (mobile ou web).</p>
+        </div>
+        <div class="features-item">
+          <img src="./assets/tick.svg" alt="" />
+          <p>CRM simplificado via Whatsapp, mobile ou web.</p>
+        </div>
+        <div class="features-item">
+          <img src="./assets/tick.svg" alt="" />
+          <p>Emissão de notas, recibos via WhatsApp mobile ou web.</p>
+        </div>
+        <div class="features-item">
+          <img src="./assets/tick.svg" alt="" />
+          <p>Onboarding simples e em poucos cliques.</p>
+        </div>
+        <div class="features-item">
+          <img src="./assets/tick.svg" alt="" />
+          <p>Inteligência financeira, fiscal e tributária.</p>
+        </div>
+        <div class="features-item">
+          <img src="./assets/tick.svg" alt="" />
+          <p>Plataforma dedicada para o empreendedor vender mais.</p>
+        </div>
+        <div class="features-item">
+          <img src="./assets/tick.svg" alt="" />
+          <p>Fluxo de caixa, bancos e projeções automatizadas.</p>
+        </div>
+        <div class="features-item">
+          <img src="./assets/tick.svg" alt="" />
+          <p>Feito por quem já sentiu na pele as dores do empreendedorismo.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- platform second section -->
+    <div class="platform-extra">
+      <div class="platform-features-list">
+        <div class="platform-features-item">
+          <h1>FÁCIL DE USAR</h1>
+          <p>
+            Plataforma amigável que pode ser acessada pelo <br />celular,
+            computador ou tablet, você escolhe!
+          </p>
+        </div>
+        <div class="platform-features-item">
+          <h1>GANHE TEMPO</h1>
+          <p>
+            Criada para acabar com todas as burocracias e <br />dificuldades
+            formais do seu dia a dia!
+          </p>
+        </div>
+        <div class="platform-features-item">
+          <h1>FACILITA SUA VIDA</h1>
+          <p>
+            Desde emissão de notas, impostos, cadastros,<br />
+            contabilidade, pagamentos, cursos e muito mais!
+          </p>
+        </div>
+        <div class="platform-features-item">
+          <h1>ALCANÇE MELHORES RESULTADOS</h1>
+          <p>
+            Tenha uma foto mensal dos resultados alcançados,<br />
+            de sua saúde financeira, seus clientes e parceiros!
+          </p>
+        </div>
+      </div>
+
+      <div class="platform-extra-img">
+        <img src="./assets/phone-mockup.svg" alt="" />
+      </div>
+    </div>
+
+    <!-- pricing section -->
+    <section class="pricing">
+      <h1 class="pricing-title">ESCOLHA A MELHOR FORMA DE PAGAR E <br>FACILITE SUA VIDA EMPREENDEDORA!</h1>
+
+      <div class="pricing-container">
+        <aside class="pricing-monthly">
+          <h3>Plataforma</h3>
+          <h1>14,90/mês</h1>
           
-          <label for="email">Telefone</label>
-          <input
-            type="email"
-            id="email"
-            class="aut-form-control"
-            placeholder="(11) 93274-4219"
-            name="user_email"
-          />
+          <div class="pricing-left-item">
+            <img src="./assets/tick.svg" alt="" />
+            <p>Onboarding simples e em poucos cliques.</p>
+          </div>
+        </aside>
+
+        <aside class="pricing-yearly">
+          <h3>Plataforma</h3>
+          <h1>129,90/ano</h1>
           
-          <label for="phone">E-mail</label>
-          <input
-            type="tel"
-            id="phone"
-            class="aut-form-control"
-            placeholder="exemplo@setfin.com.br"
-            name="user_phone"
-          />
-          
-          <label for="address">Defina uma senha</label>
-          <input
-            type="text"
-            id="address"
-            class="aut-form-control"
-            placeholder="********"
-            name="user_address"
-          />
-          
-          <label for="address">Repita sua senha</label>
-          <input
-            type="text"
-            id="address"
-            class="aut-form-control"
-            placeholder="********"
-            name="user_address"
-          />
+          <div class="pricing-right-item">
+            <img src="./assets/tick.svg" alt="" />
+            <p>Onboarding simples e em poucos cliques.</p>
+          </div>
+        </aside>
+      </div>  
+    </section>
 
-          <p>Ao continuar com seu cadastro você concorda com as políticas de privacidade, termos e condições</p>
+    <!-- footer section -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h1>Visão geral</h1>
+          <ul>
+            <li><a href="#">Plataforma</a></li>
+            <li><a href="#">Por que nós?</a></li>
+            <li><a href="#">Segurança</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h1>Soluções</h1>
+          <ul>
+            <li><a href="#">Gestão Contábil</a></li>
+            <li><a href="#">Gestão Fiscal</a></li>
+            <li><a href="#">Gestão Financeira</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h1>Sobre</h1>
+          <ul>
+            <li><a href="#">Quem somos</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Carreira</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h1>Contato</h1>
+          <ul>
+            <li>
+              <a href="mailto:comercial@setfin.com.br"
+                ><i class="fas fa-envelope"></i>comercial@setfin.com.br</a
+              >
+            </li>
+            <li>
+              <a href="tel:+55 11 93274-4219"
+                ><i class="fas fa-phone-alt"></i>+55 11 93274-4219</a
+              >
+            </li>
+            <li><i class="fas fa-map-marker-alt"></i>São Paulo, Brasil</li>
+          </ul>
+        </div>
+      </div>
+      <div class="sm-links">
+        <ul class="sm-icons">
+          <li>
+            <a href="https://www.youtube.com/" target="_blank"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/setfintecnologia/"
+              target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/setfin/" target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <p>
+        <small
+          >&copy; 2022 Setfin Tecnologia Ltda. Todos os direitos
+          reservados.</small
+        >
+      </p>
+    </footer>
 
-          <input type="submit" value="Continuar" class="aut-form-control" />
-        </form>
-      </div>
-    </div>
-  </main>
-
-  <!-- services section -->
-  <section class="services">
-    <h1>Quais os principais recursos?</h1>
-
-    <div class="services-img-container">
-      <div class="services-square">
-        <img src="/assets/financiamento-colaborativo.svg" alt="" class="services-icon">
-        <h3>Faturamento</h3>
-      </div>
-      <div class="services-square">
-        <img src="/assets/financiamento-colaborativo-1.svg" alt="" class="services-icon">
-        <h3>Pagamento</h3>
-      </div>
-      <div class="services-square">
-        <img src="/assets/dinheiro.svg" alt="" class="services-icon">
-        <h3>Financeiro</h3>
-      </div>
-      <div class="services-square">
-        <img src="/assets/avaliacao-do-cliente.svg" alt="" class="services-icon">
-        <h3>Clientes</h3>
-      </div>
-      <div class="services-square">
-        <img src="/assets/gestao-da-cadeia-de-abastecimento.svg" alt="" class="services-icon">
-        <h3>Fornecedores</h3>
-      </div>
-      <div class="services-square">
-        <img src="/assets/bate-papo-online.svg" alt="" class="services-icon">
-        <h3>Suporte</h3>
-      </div>
-      <div class="services-square">
-        <img src="/assets/contabilidade.svg" alt="" class="services-icon">
-        <h3>Contabilidade</h3>
-      </div>
-      <div class="services-square">
-        <img src="/assets/impostos.svg" alt="" class="services-icon">
-        <h3>Impostos</h3>
-      </div>
-      <div class="services-square">
-        <img src="/assets/general_ledger.svg" alt="" class="services-icon">
-        <h3>Orçamento</h3>
-      </div>
-    </div>
-  </section>  
-
-  <section class="featured">
-    <h1>Como funciona?</h1>
-    <h3>Veja como é simples começar a utilizar a Setfin para crescer seus negócios!</h3>
-
-    <div class="featured-container">
-      <div class="featured-square">
-        <img src="/assets/image8.svg" alt="" class="services-icon">
-        <h2>Cadastro</h2>
-        <p>Em poucos cliques você realiza seu cadastro com login e senha para ter acesso a plataforma!</p>
-      </div>
-      <div class="featured-square">
-        <img src="/assets/image4.svg" alt="" class="services-icon">
-        <h2>Acesso</h2>
-        <p>Em poucos cliques você realiza seu cadastro com login e senha para ter acesso a plataforma!</p>
-      </div>
-      <div class="featured-square">
-        <img src="/assets/image7.svg" alt="" class="services-icon">
-        <h2>Plataforma</h2>
-        <p>Em poucos cliques você realiza seu cadastro com login e senha para ter acesso a plataforma!</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- platform section -->
-  <div class="platform">
-    <div class="platform-container">
-      <img src="./assets/laptop.svg" alt="" class="platform-img-container">
-    </div>
-
-    <div class="platform-features">
-      <div class="features-item">
-        <img src="./assets/tick.svg" alt="">
-        <p>Plataforma amgável (mobile ou web).</p>
-      </div>
-      <div class="features-item">
-        <img src="./assets/tick.svg" alt="">
-        <p>CRM simplificado via Whatsapp, mobile ou web.</p>
-      </div>
-      <div class="features-item">
-        <img src="./assets/tick.svg" alt="">
-        <p>Emissão de notas, recibos via WhatsApp mobile ou web.</p>
-      </div>
-      <div class="features-item">
-        <img src="./assets/tick.svg" alt="">
-        <p>Onboarding simples e em poucos cliques.</p>
-      </div>
-      <div class="features-item">
-        <img src="./assets/tick.svg" alt="">
-        <p>Inteligência financeira, fiscal e tributária.</p>
-      </div>
-      <div class="features-item">
-        <img src="./assets/tick.svg" alt="">
-        <p>Plataforma dedicada para o  empreendedor vender mais.</p>
-      </div>
-      <div class="features-item">
-        <img src="./assets/tick.svg" alt="">
-        <p>Fluxo de caixa, bancos e projeções automatizadas.</p>
-      </div>
-      <div class="features-item">
-        <img src="./assets/tick.svg" alt="">
-        <p>Feito por quem já sentiu na pele as dores do empreendedorismo.</p>
-      </div>
-    </div>
-  </div>
-    
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

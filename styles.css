@@ -225,7 +225,7 @@ textarea:focus, input:focus{
   justify-content: center;
   align-items: center;
   height: 150px;
-  width: 180px;
+  width: 166px;
   border-radius: 6px;
   box-shadow: 0px 2px 13px hsla(0, 0%, 0%, 0.25);
   margin: 15px 0;
@@ -320,4 +320,259 @@ textarea:focus, input:focus{
   align-self: center;
   height: 21px;
   padding-right: 9px;
+}
+
+.platform-features-item h1 {
+  color: #00668A;
+  font-size: 18px;
+  margin: 0;
+}
+
+.platform-features-item p {
+  padding: 10px 0;
+  font-size: 15px;
+  padding: 0;
+}
+
+.platform-extra {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./assets/phone-blob.svg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 550px;
+  padding: 50px;
+  margin-top: -90px;
+}
+
+.platform-features-list {
+  margin: 0 auto;
+}
+
+.platform-extra-img img {
+  height: 540px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto 0 auto;
+}
+
+.pricing-title {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.pricing-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 21px;
+  margin: 6rem auto 0 auto;
+  width: 720px;
+}
+
+.pricing-monthly, .pricing-yearly {
+  min-height: 600px;
+  max-width: 340px;
+  border-radius: 9px;
+  box-shadow: 0px 4px 14px hsla(0, 0%, 0%, 0.25);
+  padding: 21px;
+}
+
+.pricing-left-item img, .pricing-right-item img {
+  height: 12px;
+  display: flex;
+}
+
+.pricing-monthly h1, .pricing-yearly h1 {
+  color: #1C5D7C;
+  font-size: 33px;
+  text-align: center;
+  padding: 0;
+  margin: 9px 0 0 0;
+}
+
+.pricing-monthly h3, .pricing-yearly h3 {
+  font-size: 15px;
+  text-align: center;
+  padding: 0;
+  margin: 36px 0 0 0;
+}
+
+.pricing-left-item p {
+  display: flex;
+}
+
+
+
+
+
+
+
+
+/* footer */
+/* footer mobile section styles */
+footer {
+  border-top: 1px solid #c8c5c5;
+  width: 80vw;
+  margin: auto;
+}
+
+.footer-column {
+  margin: 2rem 0;
+}
+
+.footer-column h1 {
+  position: relative;
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.footer-column h1::before {
+  display: block;
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 42px;
+  bottom: -6px;
+  background: var(--color-primary);
+}
+
+.footer-column ul li {
+  font-size: var(--font-size-body);
+  margin: 9px 0;
+  list-style: none;
+}
+
+.footer-column ul li a:hover {
+  color: var(--color-primary);
+}
+
+.footer-column ul li a .fas,
+.footer-column ul li .fas {
+  padding-right: 6px;
+}
+
+.sm-links {
+  display: grid;
+  justify-content: space-around;
+  margin: 0 0 1rem 0;
+}
+
+.sm-icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.sm-icons li {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 30px;
+  width: 30px;
+  margin: 9px;
+  border-radius: 5px;
+  background: var(--color-primary);
+}
+
+.sm-icons li:hover {
+  color: var(--color-primary);
+  outline: 1px solid var(--color-primary);
+  background: white;
+  cursor: pointer;
+}
+
+.sm-icons li a .fab {
+  font-size: 16px;
+}
+
+footer p {
+  font-size: var(--font-size-caption);
+  text-align: center;
+  border-top: 1px solid #c8c5c5;
+  padding: 1rem 0;
+}
+
+
+
+
+@media (min-width: 481px) {
+.footer-column h1 {
+    font-size: var(--font-size-paragraph);
+  }
+
+  .footer-column ul li {
+    font-size: var(--font-size-base);
+  }
+
+  footer {
+    width: 90vw;
+  }
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-column h1::before {
+    width: 50px;
+  }
+
+  footer p {
+    font-size: var(--font-size-body);
+  }
+}
+
+@media (min-width: 601px) {
+  footer {
+    width: 80vw;
+  }
+}
+
+@media (min-width: 767px) {
+  footer {
+    width: 90vw;
+  }
+
+  .footer-container {
+    grid-template-columns: 0.6fr 0.6fr 0.6fr 1fr;
+  }
+
+  .footer-column {
+    margin: 2rem 0 0;
+  }
+
+  .sm-links {
+    grid-template-columns: 0.6fr 0.6fr 0.6fr 1fr;
+    justify-content: space-between;
+    grid-template-areas: '. . . sm-icons';
+  }
+
+  .sm-icons {
+    display: flex;
+    grid-area: sm-icons;
+  }
+
+  .sm-icons li {
+    margin: 6px 12px 0 0;
+  }
+}
+
+
+@media (min-width: 1024px) {
+footer {
+    width: 80vw;
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .sm-links {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }

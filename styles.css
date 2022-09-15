@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
 * {
+  box-sizing: border-box;
     font-family: "Ubuntu", "Montserrat", sans-serif;
     font-size: 1rem;
     text-decoration: none;
@@ -37,7 +38,7 @@
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 30px 0 114px 0;
+  padding: 30px 0 140px 0;
   background-image: url(/assets/blob-main.svg);
   background-position: top right;
   background-repeat: no-repeat;
@@ -201,6 +202,10 @@ textarea:focus, input:focus{
 }
 
 /* services section */
+.services {
+  margin: 9rem 0;
+}
+
 .services h1 {
   font-size: 40px;
   text-align: center;
@@ -242,10 +247,16 @@ textarea:focus, input:focus{
 .featured h1 {
   font-size: 40px;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 21px;
 }
 
 .featured h3 {
+  font-size: 18px;
+  text-align: center;
+  margin: 0 0 6rem 0;
+}
+
+.featured h2 {
   font-size: 18px;
   text-align: center;
 }
@@ -270,4 +281,43 @@ textarea:focus, input:focus{
   text-align: center;
   max-width: 240px;
   margin: 0 auto;
+}
+
+.platform {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 12rem 0 0 0;
+  background-image: url(./assets/laptop-blob.svg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 550px;
+  padding: 90px 0;
+}
+
+.platform-img-container {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.platform-features {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.features-item {
+  display: flex;
+  max-width: 450px;
+}
+
+.features-item img {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  height: 21px;
+  padding-right: 9px;
 }

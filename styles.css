@@ -184,8 +184,9 @@ footer .right-foot a:hover {
   }
 
   footer .left-foot {
-    margin-left: 60px;
+    margin-left: 21px;
     bottom: 20px;
+    text-align: center;
   }
 
   footer p {
@@ -200,15 +201,20 @@ footer .right-foot a:hover {
   }
 
   .store-img {
-    margin-left: 9px;
+    margin-left: 0;
+    padding-top: 0;
+    padding-left: 0;
   }
 
   .store-img img {
     height: 27px;
-    margin-right: 9px;
+    padding-left: 10px;
+    bottom: 0;
   }
 
   footer .right-foot {
+    bottom: 60px !important;
+    margin-left: 18px;
     bottom: 20px;
   }
 

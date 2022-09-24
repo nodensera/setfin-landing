@@ -126,6 +126,7 @@ footer .right-foot a:hover {
 @media (min-width: 320px) {
   main {
     grid-template-columns: 1fr;
+    overflow: hidden;
   }
 
   h1 {

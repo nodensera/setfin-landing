@@ -186,7 +186,6 @@ footer .right-foot a:hover {
 
   footer .left-foot {
     margin-left: 21px;
-    bottom: 20px;
     text-align: center;
   }
 
@@ -214,9 +213,7 @@ footer .right-foot a:hover {
   }
 
   footer .right-foot {
-    bottom: 60px !important;
     margin-left: 18px;
-    bottom: 20px;
   }
 
   footer .right-foot a {
